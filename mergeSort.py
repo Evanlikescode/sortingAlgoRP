@@ -30,5 +30,7 @@ def merge(left, right):
 
 arr = [12, 11, 13, 5, 6, 7]
 sorted_arr = merge_sort(arr)
+print("Unsorted Array: ")
+print(arr)
 print("Sorted Array: ")
 print(sorted_arr)
