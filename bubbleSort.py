@@ -1,4 +1,5 @@
 
+import time
 
 def bubbleSort(data):
     for i in range(len(data)):
@@ -29,4 +30,9 @@ data = [10,9,8,7,5]
 
 # [5,7,8,9,10] - 0
 
+start_time = time.time()
 bubbleSort(data)
+stop_time = time.time()
+duration = stop_time - start_time
+
+print("Time executed: ", duration)

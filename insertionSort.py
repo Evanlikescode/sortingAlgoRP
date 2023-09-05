@@ -1,3 +1,4 @@
+import time
 
 def insertionSort(data):
     for i in range(1, len(data)):
@@ -12,4 +13,9 @@ def insertionSort(data):
     print(data)
 
 data = [10,9,8,7,5]
+start_time = time.time()
 insertionSort(data)
+stop_time = time.time()
+duration = stop_time - start_time
+
+print("Time executed: ", duration)

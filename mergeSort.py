@@ -1,4 +1,4 @@
-import random
+import random, time
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -30,8 +30,15 @@ def merge(left, right):
     return result
 
 arr = [random.randint(1, 1000) for _ in range(1000)]
+
+start_time = time.time()
 sorted_arr = merge_sort(arr)
+stop_time = time.time()
+duration = stop_time - start_time
+
+
 print("Unsorted Array: ")
 print(arr)
 print("Sorted Array: ")
 print(sorted_arr)
+print("Time executed: ", duration)
