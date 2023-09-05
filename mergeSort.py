@@ -1,3 +1,4 @@
+import random
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -28,7 +29,7 @@ def merge(left, right):
     result.extend(right[right_idx:])
     return result
 
-arr = [12, 11, 13, 5, 6, 7]
+arr = [random.randint(1, 1000) for _ in range(1000)]
 sorted_arr = merge_sort(arr)
 print("Unsorted Array: ")
 print(arr)
