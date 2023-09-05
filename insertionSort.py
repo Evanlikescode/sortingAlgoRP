@@ -9,7 +9,7 @@ def insertionSort(data):
             j = j - 1
 
         data[j+1] = key
-        print(data)
+    print(data)
 
 data = [10,9,8,7,5]
 insertionSort(data)
