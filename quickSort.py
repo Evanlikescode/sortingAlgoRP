@@ -12,6 +12,6 @@ def quick_sort(arr):
 arr = [random.randint(1, 1000) for _ in range(1000)]
 sorted_arr = quick_sort(arr)
 print("Unsorted Array: ")
-print(sorted_arr)
+print(arr)
 print("Sorted Array: ")
 print(sorted_arr)
