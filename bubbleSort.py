@@ -13,7 +13,7 @@ def bubbleSort(data):
             print(data)
             break
 
-
+#tes
 data = [10,9,8,7,5]
 # [9,10,8,7,5] - 0
 # [9,8,10,7,5] - 1
